@@ -5,6 +5,7 @@
     /// </summary>
     public class recipesList
     {
+        public int id { get; set; }
         public string name { get; set; }
         /// <summary>
         /// rרכיבים
@@ -14,6 +15,7 @@
         /// פעולות
         /// </summary>
         public List<string> operations { get; set; }
+        public string PhotoUrl { get; set; }
 
     }
 }
