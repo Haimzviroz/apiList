@@ -1,22 +1,57 @@
-html {
-  font-size: 14px;
+
+/* רקע והגדרות כלליות */
+.welcome-section {
+    position: relative;
+    background-image: url(https://watermark.lovepik.com/background/20211021/large/lovepik-delicious-colorful-food-texture-background-image_450042229.jpg); /* קובץ הרקע שלך */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* כל גובה המסך */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+/* מיכל הטקסט */
+.text-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0 0;
 }
 
-body {
-  margin-bottom: 60px;
+/* שורת התמונות */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
 }
+
+.circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+    .circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
